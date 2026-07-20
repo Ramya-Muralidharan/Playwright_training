@@ -6,11 +6,8 @@ setDefaultTimeout(60000);
 
 let browser: any;
 
-BeforeAll(async function () {
-  browser = await chromium.launch({ headless: false });
-});
-
 Before(async function (this: CustomWorld) {
+  browser = await chromium.launch({ headless: false });
   this.browser = browser;
   this.context = await browser.newContext();
   this.page = await this.context?.newPage();
@@ -21,6 +18,6 @@ After(async function (this: CustomWorld) {
   await this.browser?.close();
 });
 
-AfterAll(async function () {
-  await browser?.close();
-});
+// AfterAll(async function () {
+//   await browser?.close();
+// });

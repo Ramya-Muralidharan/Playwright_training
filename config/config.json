@@ -1,0 +1,8 @@
+{
+    "QA": {
+        "demoURL": "https://www.saucedemo.com/"
+    },
+    "UAT": {
+        "demoURL": "https://www.saucedemo.com/"
+    }
+}

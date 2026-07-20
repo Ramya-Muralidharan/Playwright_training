@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx cucumber-js --require-module ts-node/register --require \"./support/**/*.ts\" --require \"./step-definition/**/*.ts\" --config ./cucumber.mjs \"./feature/**/*.feature\"",
+    "test": "npx cucumber-js --require-module ts-node/register --require \"./support/**/*.ts\" --require \"./step-definition/**/*.ts\" --config ./cucumber.mjs --format html:reports/cucumber-report.html --format json:reports/cucumber-report.json \"./feature/**/*.feature\"",
     "test:playwright": "npx playwright test",
     "test:all": "npm run test && npm run test:playwright"
   },

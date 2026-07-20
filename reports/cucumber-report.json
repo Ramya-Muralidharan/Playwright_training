@@ -1,0 +1,97 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "login1;agent1-can-log-in",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "agent1 can log in",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1617467899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I load URL",
+            "match": {
+              "location": "step-definition\\login1.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2010371700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I login with \"Agent1\"",
+            "match": {
+              "location": "step-definition\\login1.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 409248700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 7,
+            "name": "I add \"Sauce Labs Backpack\" to cart",
+            "match": {
+              "location": "step-definition\\Homepage.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3067891399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I sort the products by \"Price (low to high)\"",
+            "match": {
+              "location": "step-definition\\Homepage.steps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2180535099
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 700426400
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC001",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "login1",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Login1",
+    "tags": [],
+    "uri": "feature\\login1.feature"
+  }
+]

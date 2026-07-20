@@ -1,0 +1,29 @@
+BDD
+feature
+Step -def
+logic /implementaion layer
+ page1. class
+ page2 class
+utility
+ premcalc
+configuration 
+hooks
+Reports
+check in checkboxes
+<input role="Check">
+    <div>
+        Option1
+    </div>
+    <div>
+        <input box>
+        </input>
+    </div>
+
+</input>
+getByrole("check" {hasText"Option1"}).check()
+
+click in chceckboxes
+locator(input[role=check] hastext Option1 div input ).click
+//password
+const attribute= this.page.locator(".input_error form_input").getAttribute('type')
+
