@@ -12,5 +12,4 @@ import { HomePage } from '../pages/HomePage';
   When('I sort the products by {string}', async function (this: CustomWorld, sortOption: string) {
     const homePage = new HomePage(this.page!);
     await homePage.sortProducts(sortOption);
-
   });
