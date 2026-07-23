@@ -1,16 +1,19 @@
 Feature: Login1
 
-  @TC001
+  @TC001 @q
   Scenario: agent1 can log in
     Given I load URL
+    When I execute "<TestCaseID>"
     When I login with "Agent1"
     And I add "<Product>" to cart
     And I sort the products by "Price (low to high)"
+    And I read price
+    And I store data in json file
     Examples:
-      | Product             |
-      | Sauce Labs Backpack |
+      |TestCaseID| Product             |
+      | TC001    | Sauce Labs Backpack |
 
-  @q
+
   Scenario Outline: agent2 can log in
     Given I load URL
     When I login with "Agent1"
