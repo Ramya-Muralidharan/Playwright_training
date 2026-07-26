@@ -6,6 +6,7 @@ import { setWorldConstructor, World } from '@cucumber/cucumber';
   context?: BrowserContext;
   page?: Page;
   quoteID?: string; // Add quoteID property to the CustomWorld interface
+  testData?: { [key: string]: any }; // Add testData property to the CustomWorld interface
 }
 
 export class CustomWorldImpl extends World implements CustomWorld {
@@ -13,6 +14,7 @@ export class CustomWorldImpl extends World implements CustomWorld {
   context?: BrowserContext;
   page?: Page;
   quoteID?: string; // Implement quoteID property in the CustomWorldImpl class
+  testData?: { [key: string]: any }; // Implement testData property in the CustomWorldImpl class
 }
 
 setWorldConstructor(CustomWorldImpl);

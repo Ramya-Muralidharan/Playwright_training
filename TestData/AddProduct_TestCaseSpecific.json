@@ -1,0 +1,16 @@
+{
+    "TC001": {
+        "Products": {
+            "ProductName": "Sauce Labs Backpack",
+            "sortOption": "Price (low to high)"
+        },
+        "CartItems": {
+            "ProductName": "Sauce Labs Backpack",
+            "Price": "$29.99"
+        }
+    },
+    "TC002": {
+        "ProductName": "Sauce Labs Bike Light",
+        "sortOption": "Price (high to low)"
+    }
+}
