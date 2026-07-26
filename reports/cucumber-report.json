@@ -6,7 +6,7 @@
         "description": "",
         "id": "login1;agent1-can-log-in",
         "keyword": "Scenario",
-        "line": 11,
+        "line": 14,
         "name": "agent1 can log in",
         "steps": [
           {
@@ -14,7 +14,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 1617467899
+              "duration": 1432993999
             }
           },
           {
@@ -27,46 +27,85 @@
             },
             "result": {
               "status": "passed",
-              "duration": 2010371700
+              "duration": 1943920899
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 6,
+            "name": "I execute \"TC001\"",
+            "match": {
+              "location": "step-definition\\login1.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 7985399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
             "name": "I login with \"Agent1\"",
             "match": {
               "location": "step-definition\\login1.steps.ts:11"
             },
             "result": {
               "status": "passed",
-              "duration": 409248700
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "And ",
-            "line": 7,
-            "name": "I add \"Sauce Labs Backpack\" to cart",
-            "match": {
-              "location": "step-definition\\Homepage.steps.ts:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 3067891399
+              "duration": 417841700
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 8,
+            "name": "I add \"Sauce Labs Backpack\" to cart",
+            "match": {
+              "location": "step-definition\\Homepage.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3068848500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 9,
             "name": "I sort the products by \"Price (low to high)\"",
             "match": {
               "location": "step-definition\\Homepage.steps.ts:12"
             },
             "result": {
               "status": "passed",
-              "duration": 2180535099
+              "duration": 2030169599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I read price",
+            "match": {
+              "location": "step-definition\\Homepage.steps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2014902699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 11,
+            "name": "I store data in json file",
+            "match": {
+              "location": "step-definition\\CommonSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3030099
             }
           },
           {
@@ -74,13 +113,17 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 700426400
+              "duration": 1396626700
             }
           }
         ],
         "tags": [
           {
             "name": "@TC001",
+            "line": 3
+          },
+          {
+            "name": "@q",
             "line": 3
           }
         ],
@@ -92,6 +135,118 @@
     "keyword": "Feature",
     "name": "Login1",
     "tags": [],
-    "uri": "feature\\login1.feature"
+    "uri": "feature\\1login1.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "add-cart;verify-price",
+        "keyword": "Scenario",
+        "line": 12,
+        "name": "Verify price",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 1412877000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I load URL",
+            "match": {
+              "location": "step-definition\\login1.steps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2738091000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I execute \"TC004\"",
+            "match": {
+              "location": "step-definition\\login1.steps.ts:16"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2243500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I login with \"Agent1\"",
+            "match": {
+              "location": "step-definition\\login1.steps.ts:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 339868599
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 8,
+            "name": "I read \"Price\" data from json file for \"TC001\"",
+            "match": {
+              "location": "step-definition\\CommonSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 18324399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "I validate the \"Price\"",
+            "match": {
+              "location": "step-definition\\CommonSteps.ts:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 8408999
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 553729300
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@TC004",
+            "line": 3
+          },
+          {
+            "name": "@q",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "add-cart",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Add cart",
+    "tags": [],
+    "uri": "feature\\AddCart.feature"
   }
 ]
